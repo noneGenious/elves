@@ -1,0 +1,5 @@
+<view class='select'>
+  <view id='item1' class='choose'>动漫</view>
+  <view id='item2' class='choose'>11111</view>
+  <view id='item3' class='choose'>22222</view>
+</view>

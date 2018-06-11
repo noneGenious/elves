@@ -1,0 +1,35 @@
+.login{
+  display: block;
+  justify-content: space-around;
+}
+.logo{
+  display: block;
+  width: 100rpx;
+  height: 100rpx;
+  margin:0 auto;
+  margin-top: 180rpx;
+  margin-bottom: 80rpx;
+  border: 1rpx solid #bfbfbf;
+  border-radius: 50%;
+  background-color: #dfdfdf;
+}
+.get{
+   margin-bottom: 100rpx;
+}
+.getlogin{
+  font-size: 16px;
+  text-align: center;
+}
+.getinput{
+  font-size: 14px;
+  text-align: center;
+  color: #888;
+
+}
+.ok{
+  width: 400rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  color: #fff;
+  background-color: #09bb07;
+}

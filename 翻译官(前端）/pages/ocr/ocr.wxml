@@ -1,0 +1,13 @@
+<!-- pages/word.wxml -->
+<view class='page'>
+ <view class='word-box'>
+ <text>原文：</text>
+<view class='word' wx:for='{{resRegions}}' wx:key='{{item.boundingBox}}' >{{item.context}}</view>
+
+
+<view class='word-box'>
+<text>译文</text>
+<view class='word' wx:for='{{resRegions}}' wx:key='{{item.boundingBox}}'>{{item.tranContent}}</view>
+</view>
+</view> 
+</view>

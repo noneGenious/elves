@@ -1,0 +1,42 @@
+
+.word-box{
+  width: auto;
+  height:80%;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  margin-top: 35rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #b2b2b2;
+  /* border: 1rpx solid black; */
+}
+.word{
+  font-size: 15pt; 
+  text-indent: 1rem;
+}
+.icon{
+  float: left;
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 5rpx;
+  margin-left: 35rpx;
+  /* padding-bottom: 10rpx; */
+}
+.pro{
+   /* border: 1rpx solid black;  */
+  padding-left: 10rpx;
+
+}
+/* .pronounce::after{
+  content: '';
+  clear: both;
+} */
+
+.root-box{
+  margin: 10rpx 0rpx;
+  padding: 0 10rpx;
+  text-indent: 1.5rem; 
+}
+.root{
+  font-size: 13pt;
+  padding: 8rpx 0;
+}

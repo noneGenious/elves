@@ -1,0 +1,182 @@
+@import "../source/searchbar.wxss";
+@import "../list/list.wxss";
+
+/* 翻译框 */
+
+.translate-box {
+  width: auto;
+  height: 500rpx;
+}
+
+.translate-switch {
+  justify-content: space-around;
+  display: flex;
+  height: 80rpx;
+  padding-bottom: 15rpx;
+  border-bottom: 1rpx solid #8a8a8a;
+}
+
+.language-left {
+  width: 200rpx;
+  height: 60rpx;
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+  text-align: center;
+  /* border: 1rpx solid #888; */
+  border-radius: 5%;
+}
+
+.language-btn {
+  color: #0778e4;
+  font-size: 30rpx;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.arrow-down {
+  display: inline;
+  border-width: 4px;
+  border-color: #777 transparent transparent;
+  border-style: dotted;  
+  margin: 20rpx;
+}
+.language-right {
+  display: inline-block;
+  text-align: center;
+  width: 200rpx;
+  height: 60rpx;
+  margin-top: 15rpx;
+  /* border: 1rpx solid #888; */
+  border-radius: 5%;
+}
+
+.change {
+  /* display: inline-block; */
+  width: 35rpx;
+  height: 35rpx;
+  padding-right: 20rpx;
+  margin-top: 35rpx;
+  /* border: 1rpx solid #888; */
+}
+
+.translate-area {
+  position: absolute;
+  width: 95%;
+  height: 290rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+
+.tip {
+  color: #888;
+  float: left;
+  padding-left: 0.8rem;
+}
+
+/* .weui-icon-clear{
+  position: relative;
+  display: inline-block;
+  margin-top: 5rpx;
+  border:1rpx solid black;
+} */
+
+.translate-way {
+  display: flex;
+  height: 80rpx;
+  text-align: center;
+  margin-top: 300rpx;
+  justify-content: space-around;
+  /* border: 1rpx solid #888; */
+}
+
+.photo {
+  width: 60rpx;
+  height: 60rpx;
+  padding-top: 30rpx;
+  /* border: 1rpx solid #888; */
+}
+
+.talk {
+  width: 60rpx;
+  height: 60rpx;
+  padding-top: 20rpx;
+  /* border: 1rpx solid #888; */
+}
+
+.tools {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  /* margin-top:10rpx;  */
+  background-color: #efeff4;
+  /* margin-bottom:10rpx; *//* border: 1rpx solid peru; *//* background-color: #cc7f77; */
+}
+
+.item1, .item2, .item3 {
+  /* border: 1rpx solid black;  */
+  width: 200rpx;
+  height: 200rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20rpx;
+  opacity: 0.8;
+}
+
+.item1 {
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20rpx;
+  opacity: 0.8;
+}
+
+.item2 {
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+.text {
+  /* background-color: #66ccff; */
+  border-radius: 20rpx;
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+}
+
+.word {
+  border: 1rpx solid black;
+  margin-bottom: 0rpx;
+  z-index: 2;
+}
+
+.readedbox {
+  width: auto;
+  height: 100%;
+  background-color: #efeff4;
+  line-height: 80rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.list {
+  font-size: 40rpx;
+  display: flex;
+  background-color: #efeff4;
+  text-indent: 0.5rem;
+  border-bottom: 0.5rpx solid peru;
+}
+
+.mean {
+  font-style: italic;
+  font-size: 35rpx;
+}
+
+.noHistory {
+  text-align: center;
+  color: #999;
+  margin-top: 80rpx;
+  font-size: 35rpx;
+}

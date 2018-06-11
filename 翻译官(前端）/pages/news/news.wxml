@@ -1,0 +1,34 @@
+<!-- 图片轮播 -->
+<view class='img'>
+  <swiper class='image-box' scroll-x="true" sroll-with-animation="true" indicator-dots='true' autoplay='true' circular='true'>
+    <swiper-item wx:for="{{news}}" wx:key="_id.$oid" wx:if="{{item.img_urls.length != 0}}">
+      <image class='new-pic' src="{{item.img_urls[0]}}" data-_id='{{item._id.$oid}}' bindtap='newsInfo'>
+        <view class="title">{{item.news_title}}</view>
+      </image>
+    </swiper-item>
+
+
+  </swiper>
+</view>
+
+<view class="weui-panel__bd" wx:for="{{news}}" wx:key="_id.$oid" data-_id='{{item._id.$oid}}' bindtap='newsInfo' wx:if='{{index < 6}}'>
+  <view class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+    <view class="weui-media>-box__hd weui-media-box__hd_in-appmsg" wx:if="{{item.img_urls.length != 0}}">
+      <image class="weui-media-box__thumb" wx:if="{{item.img_urls.length != 0}}" src="{{item.img_urls[0]}}" />
+
+    </view>
+
+    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+      <view class="weui-media-box__title">{{item.news_title}}</view>
+      <view class='type'>{{item.tag1}}</view>
+      <view class="weui-media-box__desc">{{item.news_time}}</view>
+    </view>
+  </view>
+
+</view>
+<view class="weui-panel__ft">
+  <view class="weui-cell weui-cell_access weui-cell_link">
+    <!-- <view class="weui-cell__bd">查看更多</view> -->
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </view>
+</view>

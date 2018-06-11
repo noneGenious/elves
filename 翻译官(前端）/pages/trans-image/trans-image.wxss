@@ -1,0 +1,117 @@
+
+.translate-input {
+  width: auto;
+  height: 500rpx;
+}
+
+.translate-switch {
+  justify-content: space-around;
+  display: flex;
+  height: 80rpx;
+  padding-bottom: 15rpx;
+  /* border-bottom: 1rpx solid #bfbfbf; */
+}
+
+.language-left {
+  width: 200rpx;
+  height: 60rpx;
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+  text-align: center;
+  /* border: 1rpx solid #888; */
+  border-radius: 5%;
+}
+
+.language-btn {
+  color: #0778e4;
+  font-size: 30rpx;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.arrow-down {
+  display: inline;
+  border-width: 4px; 
+  border-color: #777 transparent transparent; 
+  border-style: dotted;  
+  margin: 20rpx;
+}
+
+.language-right {
+  display: inline-block;
+  text-align: center;
+  width: 200rpx;
+  height: 60rpx;
+  margin-top: 15rpx;
+  /* border: 1rpx solid #888; */
+  border-radius: 5%;
+}
+
+.change {
+  /* display: inline-block; */
+  width: 35rpx;
+  height: 35rpx;
+  padding-right: 20rpx;
+  margin-top: 35rpx;
+  /* border: 1rpx solid #888; */
+}
+
+.translate-inarea {
+  position: absolute;
+  width: 640rpx;
+  height: 400rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  border: 1rpx solid #bfbfbf;
+  border-radius: 10rpx;
+  box-shadow:5rpx 5rpx 5rpx 5rpx #efeff4 inset;
+  margin: 15rpx 25rpx;
+}
+
+.tip {
+  color: #888;
+  float: left;
+  padding-left: 0.8rem;
+}
+
+.translate-way {
+  display: flex;
+  height: 80rpx;
+  text-align: center;
+   margin-top: 30rpx; 
+  justify-content: space-around;
+  /* border: 1rpx solid #888; */
+}
+
+.photo,.talk,.del,.copy{
+  width: 50rpx;
+  height: 50rpx;
+  padding-top: 30rpx;
+   /* border: 1rpx solid #888;  */
+}
+.talk{
+  padding-top:25rpx; 
+}
+.translate{
+  display: inline-block;
+  width: 300rpx;
+  height: 50rpx;
+   color: #fff; 
+   padding: 5rpx 0;
+  margin-top: 20rpx;
+  line-height: 50rpx;
+  background-color: #0778e4;
+  /* border: 1rpx solid #888; */
+  border-radius: 10rpx;
+}
+.translate-outarea {
+  position: absolute;
+  width: 640rpx;
+  height: 400rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  border: 1rpx solid #bfbfbf;
+  border-radius: 10rpx;
+  box-shadow:5rpx 5rpx 5rpx 5rpx #efeff4 inset;
+  margin: 35rpx 25rpx;
+}

@@ -1,0 +1,9 @@
+<view class='login'>
+  <image class='logo' src='../images/logo.png'></image>
+  <view class='get'>
+    <view class='getlogin'>是否确认登录翻译小精灵</view>
+    <view class='getinput'>翻译小精灵将会获取你的头像、昵称</view>
+    </view>
+    <button class='ok' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">确认</button>
+
+</view>

@@ -1,0 +1,55 @@
+<view class="page" wx:if='{{isEN}}'>
+  <view class="page__hd">
+
+    <view class="page__desc"></view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__h1">{{news.news_title}}</view>
+      <view class="weui-article__section">
+        <view class="weui-article__title">{{news.news_info}}</view>
+        <view class="weui-article__section" wx:for='{{news.news_content}}'>
+          <view class="weui-article__p">
+            {{item}}
+          </view>
+
+        </view>
+        <view class="weui-article__p" wx:for='{{news.img_urls}}'>
+          <image class="weui-article__img" src="{{item}}" mode="aspectFit" style="height: 180px" />
+          <view>{{news.img_text[index]}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="page" wx:else>
+  <view class="page__hd">
+
+    <view class="page__desc"></view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-article">
+      <view class="weui-article__h1">{{title2ZH}}</view>
+      <view class="weui-article__section">
+        <view class="weui-article__title">{{news.news_info}}</view>
+        <view class="weui-article__section" wx:for='{{newsContent2ZH}}'>
+          <view class="weui-article__p">
+            {{item.dst}}
+          </view>
+
+        </view>
+        <view class="weui-article__p" wx:for='{{news.img_urls}}'>
+          <image class="weui-article__img" src="{{item}}" mode="aspectFit" style="height: 180px" />
+          <view>{{imgText2ZH[index].dst}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class='translate' wx:if='{{news}}'>
+  <text bindtap='translate'>>>>>>>>>>>>>{{transText}}>>>>>>>>>>>></text>
+</view>

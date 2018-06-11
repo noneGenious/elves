@@ -1,0 +1,23 @@
+<!-- pages/word.wxml -->
+<view class='page'>
+  <view class='word-box'>
+    <view style='display:flex;'>
+      <view class='word'>{{data.query}}</view>
+      <image class='star' src='../images/yellow-star.png' wx:if='{{isWord && inDict}}' bindtap='offStar' data-query='{{data.query}}'/>
+      <image class='star ' src='../images/star.png ' wx:elif='{{isWord && !inDict}}' bindtap='onStar' data-query='{{data.query}}' />
+
+    </view>
+
+    <view class='pronounce'>
+      <image class='icon' src='../images/trump-filling.png' wx:if='{{data.basic.phonetic}}' bindtap='speak'></image>
+      <label class='pro' wx:if='{{data.basic.phonetic}}'>{{data.basic.phonetic}}</label>
+    </view>
+
+
+    <view class='root-box'>
+      <view wx:for='{{data.basic.explains}}'>{{item}}</view>
+    </view>
+
+    <view class='root-box' wx:for='{{data.translation}}' >{{item}}</view>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<!-- <view class="page-body">
+  <view class="page-body-wrapper">
+    <image src="../images/talk.png"></image>
+    <view class="btn-area">
+      <button type="primary" bindtap="takePhoto">按住开始说话</button>
+    </view>
+
+  </view>
+</view> -->
+
+<view wx:if="{{isSpeaking}}" class="speak-style">
+  <image wx:if='{{j==1}}' class="sound-style" src="../images/talk.png"></image>
+  <image wx:if="{{j==2}}" class="sound-style" src="../images/trump-filling.png"></image>
+  <image wx:if="{{j==3}}" class="sound-style" src="../images/trump.png"></image>
+  <image wx:if="{{j==4}}" class="sound-style" src="../images/trump-filling.png"></image>
+  <image wx:if="{{j==5}}" class="sound-style" src="../images/trump.png"></image>
+</view>
+<view class="record-style">
+  <button class="btn-style" bindtouchstart="touchdown" bindtouchend="touchup">按住 录音</button>
+</view>
+<view wx:if='{{tempFilePath.length != 0}}'>
+  <button class="btn-style" bindtap='listen'>听</button>
+</view>

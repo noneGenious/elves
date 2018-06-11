@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<servlet-name>MyWords</servlet-name>
+		<servlet-class>com.service.User.MyWords</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyWords</servlet-name>
+		<url-pattern>/MyWords</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.service.User.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ShowNews</servlet-name>
+		<servlet-class>com.service.News.ShowNews</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowNews</servlet-name>
+		<url-pattern>/ShowNews</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetNews</servlet-name>
+		<servlet-class>com.service.News.GetNews</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetNews</servlet-name>
+		<url-pattern>/GetNews</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Translate_B</servlet-name>
+		<servlet-class>com.service.Translate.Translate_B</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Translate_B</servlet-name>
+		<url-pattern>/Translate_B</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Translate_Y</servlet-name>
+		<servlet-class>com.service.Translate.Translate_Y</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Translate_Y</servlet-name>
+		<url-pattern>/Translate_Y</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Photo</servlet-name>
+		<servlet-class>com.service.Translate.Photo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Photo</servlet-name>
+		<url-pattern>/Photo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Audio</servlet-name>
+		<servlet-class>com.service.Translate.Audio</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Audio</servlet-name>
+		<url-pattern>/Audio</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EditTags</servlet-name>
+		<servlet-class>com.service.User.EditTags</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditTags</servlet-name>
+		<url-pattern>/EditTags</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetDict</servlet-name>
+		<servlet-class>com.service.Dict.GetDict</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetDict</servlet-name>
+		<url-pattern>/GetDict</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddToDict</servlet-name>
+		<servlet-class>com.service.Dict.AddToDict</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddToDict</servlet-name>
+		<url-pattern>/AddToDict</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DelFromDict</servlet-name>
+		<servlet-class>com.service.Dict.DelFromDict</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DelFromDict</servlet-name>
+		<url-pattern>/DelFromDict</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>

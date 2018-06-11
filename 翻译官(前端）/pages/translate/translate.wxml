@@ -1,0 +1,109 @@
+<!-- 搜索框 -->
+
+<!-- 翻译框！！！ -->
+<view class='translate-box'>
+  <!-- 语言选择栏 -->
+  <!-- <view class='translate-switch'>
+
+    <view class='language-left' >
+    <view class='language-btn'>中文</view>
+    <icon class='arrow-down'></icon>
+    </view>
+
+    <image class='change' src='../images/change.png'></image>
+
+    <view class='language-right'>
+    <view class='language-btn'>English</view>
+    <icon class='arrow-down'></icon>
+    </view>
+
+    </view> -->
+  <view class='translate-switch'>
+
+    <view class='language-left'>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" bindchange='changeLanguageFrom'>
+        <view class='language-btn'>{{from}}</view>
+        <icon class='arrow-down'></icon>
+        <!-- <button type="default">单列选择器</button> -->
+      </picker>
+    </view>
+
+    <image class='change' src='../images/change.png'></image>
+
+    <view class='language-right'>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" bindchange='changeLanguageTo'>
+        <view class='language-btn'>{{to}}</view>
+        <icon class='arrow-down'></icon>
+        <!-- <button type="default">单列选择器</button> -->
+      </picker>
+    </view>
+
+  </view>
+  <!-- 文本框 -->
+  <textarea class='translate-area' placeholder="{{tip}}" bindtap='onTip' bindconfirm='onTranslate' maxlength='-1'>
+  </textarea>
+
+  <view class='translate-way'>
+    <image class='photo' src='../images/photo.png' bindtap='openCamera'></image>
+    <image class='talk' src='../images/talk.png' bindtap='onVoice'></image>
+  </view>
+</view>
+
+<!-- <view class='search-word'>
+  <input class='search-line' value='Search···'></input>
+</view> -->
+<!-- <view class='tools'>
+  <view class='item1'>
+     <image class='text' src='../images/text.png'></image> 
+   <view>文字翻译</view></view>
+  <view class='item2'>
+   <image class='text' src='../images/talk.png'></image> 
+  <view>语音翻译</view></view>
+  <view class='item3'>
+   <image class='text' src='../images/photo.png'></image> 
+  <view>拍照翻译</view></view>
+</view> -->
+
+<!-- 单词查询记录 -->
+
+<view class="weui-cells weui-cells_after-title">
+  <block wx:for='{{history}}' wx:key='*this'>
+    <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" catchtap='checkHistory' data-query='{{item.query}}'>
+      <view class="weui-cell__bd">{{item.query}}</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">{{item.translate}}</view>
+    </view>
+  </block>
+
+
+   <!-- <navigator url="/pages/word/word" class="weui-cell" >
+    <view class="weui-cell__bd">article</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">n.文章；物品；条款</view>
+  </navigator> -->
+  <!-- <navigator url="/pages/word/word" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__bd">apple</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">n.苹果，苹果树，苹果似的东西</view>
+  </navigator>
+  <navigator url="/pages/word/word" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__bd">pronounce</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">vt.发音；宣判；断言</view>
+  </navigator>
+  <navigator url="/pages/word/word" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__bd">banana</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">n.香蕉；喜剧演员；大鹰钩鼻</view>
+  </navigator>
+  <navigator url="/pages/word/word" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__bd">词汇</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">vocabulary</view>
+  </navigator>
+  <navigator url="/pages/word/word" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__bd">惊喜</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">pleasantly surprised</view>
+  </navigator>   -->
+  <!-- <navigator url="/pages/word/word" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__bd">cell standard</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+  </navigator> -->
+</view>
+<view wx:if='{{history.length <= 0}}' class='noHistory'>
+  <view >没有搜索记录</view>
+</view>

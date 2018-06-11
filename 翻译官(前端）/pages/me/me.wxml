@@ -1,0 +1,65 @@
+<!--pages/me/me.wxml-->
+<view class='page-body'>
+  <view class="page-section">
+
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__bd">
+        <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+          <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+            <image class="weui-media-box__thumb" src="{{userInfo.avatarUrl}}" />
+          </view>
+          <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+            <view class="weui-media-box__title">{{userInfo.nickName}}</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+
+    <!-- <view class='follow-box'>
+      <view class='follow-content'>
+        <text class='follow_text'>{{follow_num}}</text> 关注我的人</view>
+      <view class='fans-content'>
+        <text class='follow_text'>{{fans_num}}</text> 我关注的人</view>
+    </view> -->
+
+
+
+
+    <view class="placeholder"></view>
+    <navigator url="/pages/dict/dict" class="weui-cells weui-cells_after-title" hover-class="weui-cell_active">
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <image src='../images/wordbook.png' style="margin-right:12px; padding-bottom:10rpx; vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd" >单词本</view>
+      </view>
+    </navigator>
+
+    <view class="placeholder"></view>
+    <view class="weui-cells weui-cells_after-title">
+      <navigator url="/pages/grid/grid" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src="../images/love.png" style="margin-right: 12px; padding-bottom:10rpx; vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd" >阅读爱好</view>
+      </navigator>
+      <navigator url="../watch/watch" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__hd">
+          <image src='../images/set.png' style="margin-right: 12px; padding-bottom:10rpx; vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">基本设置 </view>
+      </navigator>
+    </view>
+
+    <view class="placeholder"></view>
+    <view class="weui-cells weui-cells_after-title" bindtap='openSet' hover-class="none">
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <image src='../images/pay1.png' style="margin-right:12px; padding-bottom:10rpx; vertical-align: middle;width:20px; height: 20px;"></image>
+        </view>
+        <view class="weui-cell__bd">打赏一下</view>
+      </view>
+    </view>
+
+  </view>
+</view>

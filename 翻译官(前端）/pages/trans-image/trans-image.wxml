@@ -1,0 +1,45 @@
+<!-- trans-image.wxml -->
+<!-- 翻译框！！！ -->
+<view class='translate-input'>
+  <!-- 语言选择栏 -->
+  <view class='translate-switch'>
+
+    <view class='language-left'>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class='language-btn'>中文</view>
+      <icon class='arrow-down'></icon>
+        <!-- <button type="default">单列选择器</button> -->
+      </picker>
+    </view>
+
+    <image class='change' src='../images/change.png'></image>
+
+    <view class='language-right'>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class='language-btn'>English</view>
+      <icon class='arrow-down'></icon>
+        <!-- <button type="default">单列选择器</button> -->
+      </picker>
+    </view>
+
+  </view>
+  <!-- 拍照内容框 -->
+  <textarea class='translate-inarea' placeholder="{{tip}}" bindtap='onTip' bindconfirm='onTranslate' maxlength='-1'>
+  </textarea>
+
+</view>
+<!-- 中间栏 -->
+  <view class='translate-way'>
+    <image class='photo' src='../images/photo.png' bindtap='openCamera'></image>
+    <image class='talk' src='../images/talk.png'></image>
+    <view class='translate'>翻译 Translate </view>
+    <image class='del' src='../images/del.png'></image>
+    <image class='copy' src='../images/copy.png'></image>
+  </view>
+
+  <!-- 拍照内容框 -->
+  <view class='translate-output'>
+  <textarea class='translate-outarea' placeholder="{{tip}}" bindtap='onTip' bindconfirm='onTranslate' maxlength='-1'>
+  译文：
+  </textarea>
+  </view>

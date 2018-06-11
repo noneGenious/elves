@@ -1,0 +1,60 @@
+{
+  "pages":[
+    
+    "pages/translate/translate",
+    "pages/login/login",
+    "pages/me/me",
+    "pages/news/news",
+    "pages/panel/panel",
+    "pages/list/list",
+    "pages/article/article",
+    "pages/select/select",
+    "pages/camera/camera",
+    "pages/word/word",
+    "pages/ocr/ocr",
+    "pages/dict/dict",
+    "pages/grid/grid",
+    "pages/audio/audio",
+    "pages/game/game"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"#424242",
+    "navigationBarBackgroundColor": "#0778e4",
+    "navigationBarTitleText": "翻译小精灵",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#888",
+    "selectedColor": "#0778e4",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/news/news",
+        "text": "关注",
+        "iconPath": "pages/images/new.png",
+        "selectedIconPath": "pages/images/newafter.png"
+      },
+      {
+        "pagePath": "pages/translate/translate",
+        "text": "翻译",
+        "iconPath": "pages/images/translate.png",
+        "selectedIconPath": "pages/images/translateafter.png"
+      },
+      {
+        "pagePath": "pages/game/game",
+        "text": "挑战",
+        "iconPath": "pages/images/game.png",
+        "selectedIconPath": "pages/images/gameafter.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "pages/images/me.png",
+        "selectedIconPath": "pages/images/meafter.png"
+      }
+    ]
+  }
+}

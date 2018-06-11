@@ -1,0 +1,27 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">我想阅读···类型的文章</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-grids">
+      <block wx:for="{{tag1}}" wx:key="*this">
+        <block wx:if='{{isSelected[index]}}'>
+          <view class="weui-grid-selected" hover-class="weui-grid_active" bindtap='select' data-number='{{index}}'>
+
+            <icon class='icon' color='#75ccc4' type='success_no_circle' size='20' wx:if='{{isSelected[index]}}'></icon>
+            <view class="weui-grid__label">{{item}}</view>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="weui-grid" hover-class="weui-grid_active" bindtap='select' data-number='{{index}}'>
+            <view class="weui-grid__label">{{item}}</view>
+          </view>
+        </block>
+      </block>
+    </view>
+  </view>
+</view>
+<view class='btn'>
+<button class='btn-skip' type="primary" bindtap="takePhoto" bindtap='skip' style='background-color:#eee;color:#424242'>跳过</button>
+<button class='btn-next' type="primary" bindtap="takePhoto" bindtap='confirm' style='background-color:#0778e4;color:#fff'>确定</button>
+</view>

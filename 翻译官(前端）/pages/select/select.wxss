@@ -1,0 +1,30 @@
+.select{
+  position: relative;
+  width: 55vh;
+  height: 80vh;
+  margin: 0 auto;
+  margin-top: 100rpx;
+  border: 1rpx solid peru;
+}
+.anime,.choose{
+  position: absolute;
+  width: 15vh;
+  height: 15vh; 
+  text-align: center;
+  border: 1rpx solid peru;
+  border-radius: 50%;
+  line-height: 15vh;
+}
+#item1{
+  margin: 2vh;
+}
+#item2{
+  margin-top: 15vh;
+  margin-left:15vh;
+
+}
+#item3{
+  position:absolute;
+  margin-left:38vh;
+  margin-top: 5vh;
+}

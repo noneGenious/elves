@@ -1,0 +1,10 @@
+<scroll-view class="weui-cells weui-cells_after-title" scroll-y='true'>
+
+  <view class="weui-cell" wx:for='{{dict}}' data-query='{{item.query}}' bindtap='onWordInfo'>
+    <view class="weui-cell__bd">{{item.query}}</view>
+    <block wx:for='{{item.basic.explains}}' wx:for-item='explain'>
+      <view class="weui-cell__ft weui-cell__ft_in-access">{{explain}}</view>
+    </block>
+  </view>
+
+</scroll-view>
